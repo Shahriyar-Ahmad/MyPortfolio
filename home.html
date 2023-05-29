@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/355a392082.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <title>My Portfolio</title>
+    <style>
+        .ser1:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- desktop navbar -->
+        <nav class="navbar">
+            <h3 class="logo"><span>Sky</span>CODER</h3>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <!-- phone navbar -->
+        <nav class="phonenav">
+            <h3 class="logo"><span>Sky</span>CODER</h3>
+            <i class="fa-sharp fa-solid fa-bars" onclick="sideOpen()"></i>
+        </nav>
+        <!-- phone toggle navbar -->
+        <nav class="sidenav" id="sidenav">
+                <!-- <h3 class="logo"><span>Sky</span>CODER</h3> -->
+                <i class="fa-regular fa-circle-xmark" onclick="sideClose()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+        </nav>
+      <!-- name and profession in first -->
+        <div class="first">
+            <h1>Hey, I am  <span class="input"></span></h1>
+            <b>Frontend Developer</b>
+        </div>
+
+    </div>
+    <!-- about section start -->
+    <div class="about" id="about">
+        <!-- about imge section -->
+        <div class="aboutimg">
+            <img src="images/user.png">
+        </div>
+        <!-- about text section -->
+        <div class="abouttext">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Architecto deserunt voluptatum eaque doloremque ex minima.
+                Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+                Architecto deserunt voluptatum eaque doloremque ex minima.</p>
+                <div class="tab-title">
+            <span onclick="skillOpen()" class="ghi7 skl active">Skills</span>
+            <span onclick="expOpen()" class="ghi7 exp">Experience</span>
+            <span onclick="eduOpen()" class="ghi7 edu">Education</span>
+        </div>
+            <!-- about skill section -->
+            <div class="skill" id="skills">
+                <h4>HTML/CSS/JS</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <h4>Git & GitHub</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <h4>Wordpress</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+            <!-- about experience section -->
+            <div class="skill" id="experience">
+                <h4>Jouniar UI</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <h4>Git & GitHub</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <h4>Wordpress</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+            <!-- about eduction section -->
+            <div class="skill" id="education">
+                <h4>Web Development & Desining</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <h4>Git & GitHub</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <h4>Wordpress</h4>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            </div>
+        </div>
+    </div>
+    <!-- about end -->
+    <!-- services start -->
+    <h1 class=" skyser" id="services">Our Services</h1>
+    <div class="services" >
+        
+        <div class="ser1">
+            <h2>UI</h2>
+            <b>User Interface</b>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </p>
+        </div>
+        <div class="ser1">
+            <h2>Costmization</h2>
+            <b>Modified Your Site</b>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </p>
+        </div>
+        <div class="ser1">
+            <div class="cont">
+            <h2>Wordpress</h2>
+            <b> Manage Your Site </b>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing.
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+                Lorem ipsum dolor sit, amet consectetur adipisicing.
+            </p>
+        </div>
+        </div>
+    </div>
+    <!-- services end -->
+
+    <!-- projects start -->
+    <h1 class=" skyser" id="projects">My Projects</h1>
+    <div class="projects" >
+        <div class="pro1">
+            <div class="imgbox">
+                <img src="images/work-1.png">
+            </div>
+            <b>HTML/CSS/JS</b>
+            <h3>Weather App</h3>
+            <p> Assumenda aliquam nesciunt dicta quasi earum aspernatur odio, omnis alias nobis 
+               .</p>
+               <button>Visit</button>
+        </div>
+        <div class="pro1">
+            <div class="imgbox">
+                <img src="images/work-1.png">
+            </div>
+            <b>HTML/CSS/JS</b>
+            <h3>Weather App</h3>
+            <p> Assumenda aliquam nesciunt dicta quasi earum aspernatur odio, omnis alias nobis 
+               .</p>
+               <button>Visit</button>
+        </div>
+        <div class="pro1">
+            <div class="imgbox">
+                <img src="images/work-1.png">
+            </div>
+            <b>HTML/CSS/JS</b>
+            <h3>Weather App</h3>
+            <p> Assumenda aliquam nesciunt dicta quasi earum aspernatur odio, omnis alias nobis 
+               .</p>
+               <button src="">Visit</button>
+        </div>
+    </div>
+    <!-- projects section end -->
+    <!-- contact section start -->
+    <div class="contact" id="contact">
+        <div class="contacttext">
+            <h2>Contact Us</h2>
+            <i class="fa-solid fa-square-phone"></i>&nbsp; <b class="b1">+92-314-4992183 </b><br>
+            <br>
+            <i class="fa-solid fa-at"></i></i>&nbsp;<b class="b1">abc@gmail.com </b><br>
+            <div class="icon">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-square-github"></i>
+            </div>
+            <button href="Fall 2022_CS101_2.pdf" Download >Download CV</button>
+        </div>
+       
+        <div class="contactform">
+            <label>Enter Your name</label><br>
+          <input name="Name" type="text" placeholder="Enter Your Name"><br>
+          <label>Enter Your Email Address</label><br>
+          <input name="Email" type="email" placeholder="Enter Your EmailAdress"><br>
+          <label> Share Your Feedback</label><br>
+          <textarea name="Messege"  id=""  rowspan="6" placeholder=" Send Messege"></textarea><br>
+          <button>Submit</button>
+        </div>
+    </div>
+   <!-- contact section end -->
+   <!-- footer is here -->
+    <div class="footer">
+        <p>Made With <span>Love</span> By Shahriyar Ahmad</p>
+    </div>
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+         var typed = new Typed (".input",{
+   strings:["Shahriyar Ahmad.","UI Designer.","Video Editor.","Wordpress Developer."],
+   typeSpeed : 70,
+   backSpeed: 60,
+   loop: true
+ });
+    </script>
+</body>
+
+</html>

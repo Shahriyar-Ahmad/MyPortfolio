@@ -1,0 +1,750 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(31, 30, 30);
+}
+
+.container {
+    background-image: url(images/background.png);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* navbar css */
+.navbar {
+    display: flex;
+    background-color: rgb(35, 34, 34);
+    color: aquamarine;
+    font-family: "Ubuntu";
+    justify-content: space-around;
+    background-repeat: no-repeat;
+    top: 0px;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar ul { 
+    overflow: hidden;
+    /* margin-right: 80px; */
+    top: 0px;
+    
+}
+
+.navbar ul li {
+    float: left;
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 1.5s;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.navbar ul li a :hover {
+    border-bottom: 2px solid rgb(235, 231, 231);
+    transition: 0.5s;
+    cursor: pointer;
+    position: absolute;
+    bottom: 3px;
+    color: white;
+}
+
+/* toggle navebar css */
+.sidenav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    right: 0px;
+    text-align: start;
+    background-color: rgb(50, 49, 49);
+    display: flex;
+    flex-direction: row;
+    display: none;
+    top: 60px;
+    position: fixed;
+    z-index: 2;
+    transition: .9s ease-in;
+
+}
+
+.sidenav ul {
+    display: flex;
+    /* flex-direction: column; */
+    transition: 1.0s ease-in;
+    margin-left: 20px;
+}
+
+.sidenav li {
+    margin: 1px;
+    padding: 5px;
+    list-style: none;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    color: aquamarine;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.sidenav span {
+    color: aquamarine;
+}
+
+.sidenav h3 {
+    margin-left: 0px;
+    color: aquamarine;
+}
+
+.sidenav i {
+    font-size: 15px;
+    color: aquamarine;
+    position: absolute;
+    right: 20px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+/* phone navbar */
+.phonenav {
+    display: none;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 2;
+    background-color: rgb(50, 49, 49);
+
+}
+
+.phonenav h3 {
+    color: aquamarine;
+    margin-left: 20px;
+}
+
+.phonenav h3 span {
+    color: white;
+}
+
+.phonenav i {
+    font-size: 25px;
+    color: aquamarine;
+    position: absolute;
+    right: 20px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+    transition: .5s step-end;
+}
+
+/* phone navber */
+.phonenav {
+    display: none;
+}
+
+/* first heading css */
+.logo {
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+    padding: 10px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.logo span {
+    font-family: "Ubuntu";
+    color: rgb(246, 248, 249);
+    font-size: 30px;
+}
+
+.first {
+    display: inline-block;
+    width: 40%;
+    justify-content: center;
+
+    color: white;
+    margin-left: 100px;
+    margin-top: 300px;
+
+
+}
+
+.first h1 {
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.first h1 span {
+    color: aquamarine;
+}
+
+.first b {
+    margin: auto;
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* about css */
+.about {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+    height: 500px;
+
+}
+
+.aboutimg {
+    flex-direction: column;
+    width: 25%;
+    margin-right: 40px;
+}
+
+.aboutimg img {
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    transition: .8s ease-in-out;
+   
+    border: 1px solid aquamarine;
+}
+.aboutimg:hover img{
+    padding: 10px;
+    margin-left: 0;
+    border: 1px solid aquamarine;
+    
+}
+
+.abouttext {
+    flex-direction: column;
+    width: 75%;
+
+    color: white;
+}
+
+.abouttext h1 {
+    text-align: center;
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.abouttext p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px;
+
+}
+
+.abouttext span {
+    padding: 10px;
+    margin: 5px;
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.skill {
+    padding: 10px;
+    margin: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.8s ease-in;
+}
+
+.skill h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: underline;
+}
+
+.ghi7 {
+    color: white;
+    cursor: pointer;
+    transition: 1.0s ease-in;
+    width: 100px;
+}
+
+.active {
+    border-bottom: 1px solid aqua;
+    background-color: rgb(72, 71, 71);
+    margin: 0.5rem 0 0.5rem;
+    transition: 0.5s ease-in;
+    
+}
+
+#experience {
+    display: none;
+}
+
+#education {
+    display: none;
+}
+
+/* h1 heading services and projects css */
+.skyser {
+    text-align: center;
+    color: aquamarine;
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+/* services css */
+.services {
+    display: flex;
+    color: white;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.ser1 {
+    width: 30%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    background-color: rgb(88, 87, 85);
+    height: 250px;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.6s ease-in;
+}
+
+.ser1:hover {
+    background-color: rgb(128, 189, 169);
+    color: white;
+    text-shadow: 0 10px 15px rgba(138, 135, 138, 0.5);
+}
+
+.ser1:hover b {
+    color: white;
+   }
+
+.ser1 h2 {
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.ser1 b {
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aquamarine;
+    font-size: large;
+}
+
+.ser1 p {
+    text-align: start;
+    margin: 20px;
+}
+
+/* projects css */
+.projects {
+    display: flex;
+    color: white;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.pro1 {
+    width: 30%;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    background-color: rgb(88, 87, 85);
+    height: 420px;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.imgbox {
+    overflow: hidden;
+    position: relative;
+    /* display: inline-block; */
+}
+
+.imgbox img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    transition: transform 0.5s;
+    cursor: pointer;
+    padding: 0;
+
+}
+
+.imgbox:hover img {
+    transform: scale(1.1);
+    transform-origin: center center;
+}
+
+.pro1 h3 {
+
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aquamarine;
+    margin: 10px;
+}
+
+.pro1 p {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+}
+
+.pro1 button {
+    background-color: aquamarine;
+    font-size: 15px;
+    padding: 5px;
+    margin: 0px;
+    border-radius: 3px;
+    border: 0px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+/* contact css */
+.contact {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: auto;
+}
+
+.contacttext {
+    flex-direction: column;
+    width: 40%;
+
+}
+
+.contactform {
+    flex-direction: column;
+    width: 60%;
+    margin-top: 60px;
+
+}
+
+.contactform label {
+    color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px 0 10px;
+    padding: 5px;
+}
+
+.contactform input {
+    width: 75%;
+    height: 40px;
+    margin: 10px 0 10px;
+    outline: none;
+    padding: 2px;
+}
+
+.contactform textarea {
+    margin-top: 10px;
+    width: 73%;
+    padding: 10px;
+    outline: none;
+}
+
+.contactform button {
+    background-color: aquamarine;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px;
+    border: 0px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.contactform button :hover {
+    border: 2px solid aquamarine;
+    background-color: black;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.contacttext h2 {
+
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    color: aquamarine;
+}
+
+.b1 {
+    font-size: large;
+    padding: 10px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 5px;
+}
+
+.icon i {
+    font-size: 25px;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    width: 5%;
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.fa-brands:hover  {
+    transition: .9s ease-in;
+    position: relative;
+    bottom: 3px;
+
+}
+
+.contacttext button {
+    background-color: aquamarine;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 3px;
+    border: 0px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+/* footer css */
+.footer {
+    height: 30px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: black;
+   padding: 20px;
+}
+
+.footer p {
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.footer span {
+    color: aquamarine;
+}
+
+@media screen and (min-width: 0px) and (max-width: 760px) {
+    .container {
+        background-image: url(/images/phone-background.png);
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .phonenav {
+        display: block;
+    }
+
+    .first {
+        margin-left: 50px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aboutimg {
+        width: 80%;
+    }
+
+    .abouttext {
+        width: 90%;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .ser1 {
+        width: 100%;
+        /* margin: auto; */
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .pro1 {
+        width: 100%;
+         margin: auto; 
+        height: 550px;
+        margin-bottom: 19px;
+    }
+
+    .pro1 img {
+        height: 330px;
+    }
+   .pro1 b{
+    margin-top: 5px;
+   }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: center;
+    }
+
+    .contacttext {
+        width: 100%;
+
+    }
+
+    .contactform {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 761px) and (max-width: 1100px) {
+    .container {
+        background-image: url(/images/phone-background.png);
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .phonenav {
+        display: block;
+    }
+
+    .first {
+        margin-left: 50px;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+    }
+
+    .aboutimg {
+        width: 50%;
+    }
+
+    .abouttext {
+        width: 90%;
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .ser1 {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .pro1 {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 10px;
+        height: 450px;
+    }
+
+    .pro1 img {
+        height: 250px;
+    }
+
+    .aboutimg {
+        width: 90%;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+       width: 70%;
+    }
+    .contacttext {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contactform {
+        width: 70%;
+        margin: auto;
+    }
+
+    .contactform input {
+        width: 100%;
+    }
+    .contactform label{
+        text-align: left;
+    }
+    .contactform textarea {
+        width: 100%;
+    }
+
+    .contactform button {
+        text-align: center;
+    }
+} 
