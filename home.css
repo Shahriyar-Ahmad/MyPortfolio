@@ -340,7 +340,7 @@ body {
 }
 
 .ser1:hover {
-    background-color: rgb(128, 189, 169);
+    background-color: rgba(128, 189, 169, 0.912);
     color: white;
     text-shadow: 0 10px 15px rgba(138, 135, 138, 0.5);
 }
@@ -386,7 +386,7 @@ body {
     color: white;
     justify-content: center;
     background-color: rgb(88, 87, 85);
-    height: 420px;
+    height: auto;
     align-items: center;
     border-radius: 10px;
     margin-top: 20px;
@@ -430,7 +430,7 @@ body {
     background-color: aquamarine;
     font-size: 15px;
     padding: 5px;
-    margin: 0px;
+    margin: 5px;
     border-radius: 3px;
     border: 0px solid black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

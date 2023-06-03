@@ -14,7 +14,7 @@
  function eduOpen(){
     document.getElementById('education').style.display =" block";
     document.getElementById('skills').style.display ="none";
-    document.getElementById('experience').style.borderBottom ="none";
+    document.getElementById('experience').style.display ="none";
     let Edu =document.getElementsByClassName("edu");
     let EduActive =Edu.classList.add("active");
     let Skl =document.getElementsByClassName("skl");
