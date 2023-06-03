@@ -551,7 +551,10 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
 }
-
+.contacttext button a{
+    text-decoration: none;
+    color: black;
+}
 /* footer css */
 .footer {
     height: 30px;
