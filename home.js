@@ -3,13 +3,12 @@
     document.getElementById('experience').style.display =" block";
     document.getElementById('skills').style.display ="none";
     document.getElementById('education').style.display ="none";
+    let Edu =document.getElementsByClassName("edu");
+    let EduActive =Exp.classList.add("active");
+    let Skl =document.getElementsByClassName("skl");
+    let SklActive =Skl.classList.remove("active");
     let Exp = document.getElementsByClassName("exp");
-    Exp.borderBottom="1px";
-    let Edu = document.getElementsByClassName("edu");
-    Edu.borderBottom="1px aqua";
-    let Skl = document.getElementsByClassName("skl");
-    Skl.style.borderBottom="1px aqua";
-    console.log('hlo')
+    let ExpActive =Edu.classList.remove("active");
     
  }
  function eduOpen(){
