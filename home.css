@@ -635,7 +635,7 @@ body {
     .pro1 {
         width: 100%;
          margin: auto; 
-        height: 550px;
+         height: auto;
         margin-bottom: 19px;
     }
 
@@ -719,7 +719,7 @@ body {
         width: 70%;
         margin: auto;
         margin-bottom: 10px;
-        height: 450px;
+       height: auto;
     }
 
     .pro1 img {
